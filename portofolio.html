@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio — Alfons Purvance Ndraha</title>
+    <link rel="stylesheet" href="background.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1 class="site-header__title">Portofolio</h1>
+      <img
+        class="site-header__photo"
+        width="200"
+        height="200"
+        src="my foto.jpeg"
+        alt="foto saya"
+      />
+      <nav class="site-header__nav" aria-label="Navigasi utama">
+        <ul class="site-header__nav-list">
+          <li><a href="#tentang-saya">Tentang Saya</a></li>
+          <li><a href="#fokus-saya">Fokus Saya</a></li>
+          <li><a href="#pendidikan">Pendidikan</a></li>
+          <li><a href="#hobi">Hobi</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="portfolio-main">
+      <section class="content-card" id="tentang-saya">
+        <h2>Tentang Saya</h2>
+        <p>
+          Saya seorang mahasiswa Ilmu Komputer di Universitas Negeri Medan
+          yang berfokus pada pengembangan perangkat lunak dan pemecahan masalah
+          berbasis teknologi. Saya memiliki ketertarikan pada software
+          engineering, arsitektur sistem, dan teknologi modern. Saya berkomitmen
+          untuk terus belajar dan mengembangkan keterampilan agar dapat
+          menciptakan solusi digital yang efisien, responsif, dan bermanfaat.
+          Saya juga menghargai kerja sama tim serta senang mempelajari hal-hal
+          baru untuk meningkatkan kemampuan saya di bidang teknologi.
+        </p>
+      </section>
+
+      <section class="content-card" id="fokus-saya">
+        <h2>Fokus Saya</h2>
+        <ul class="focus-list">
+          <li>Pengembangan perangkat lunak</li>
+          <li>Pemecahan masalah berbasis teknologi</li>
+          <li>Kerja sama tim dan pembelajaran teknologi modern</li>
+        </ul>
+      </section>
+
+      <section class="content-card" id="pendidikan">
+        <h2>Pendidikan</h2>
+        <ul>
+          <li>SD Negeri Hiliweto Gido</li>
+          <li>SMP Negeri 1 Gido</li>
+          <li>SMA Negeri 1 Gido</li>
+          <li>Universitas Negeri Medan</li>
+        </ul>
+      </section>
+
+      <section class="content-card" id="hobi">
+        <h2>Hobi</h2>
+        <ol>
+          <li>Bermain game</li>
+          <li>Membaca</li>
+          <li>Memecahkan teka-teki</li>
+        </ol>
+      </section>
+
+      <section class="content-card" id="kontak">
+        <h2>Kontak</h2>
+
+        <table>
+          <tr>
+            <th scope="row">Email</th>
+            <td>
+              <a href="mailto:alfonspurvancendraha@gmail.com"
+                >alfonspurvancendraha@gmail.com</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Telepon</th>
+            <td><a href="tel:+6282283362331">082283362331</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Alamat</th>
+            <td>Medan, Sumatera Utara, Indonesia</td>
+          </tr>
+        </table>
+
+        <h3>Kirim Pesan</h3>
+        <form action="#" method="post" novalidate>
+          <p>
+            <label for="nama"
+              >Nama Lengkap <span aria-hidden="true">*</span></label
+            >
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              required
+              minlength="3"
+              aria-required="true"
+              placeholder="Masukkan nama"
+            />
+          </p>
+
+          <p>
+            <label for="email"
+              >Alamat Email <span aria-hidden="true">*</span></label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              aria-required="true"
+              placeholder="nama@email.com"
+              aria-describedby="email-hint"
+            />
+          </p>
+
+          <p>
+            <label for="telepon">Nomor Telepon</label>
+            <input
+              type="tel"
+              id="telepon"
+              name="telepon"
+              pattern="[0-9]{10,13}"
+              aria-describedby="telepon-hint"
+              placeholder="08xxxxxxxxxx"
+            />
+          </p>
+
+          <p>
+            <label for="pesan">Pesan <span aria-hidden="true">*</span></label>
+            <textarea
+              id="pesan"
+              name="pesan"
+              rows="5"
+              required
+              aria-required="true"
+              minlength="10"
+              placeholder="Tulis pesan Anda di sini..."
+            ></textarea>
+          </p>
+
+          <p>
+            <button type="submit" aria-label="Kirim formulir kontak">
+              Kirim Pesan
+            </button>
+          </p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
